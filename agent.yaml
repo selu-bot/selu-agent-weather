@@ -1,5 +1,6 @@
 id: weather
 name: Weather Assistant
+routing: inline
 session:
   trigger: mention
   idle_timeout_minutes: 15
