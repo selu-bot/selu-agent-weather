@@ -1,0 +1,17 @@
+agent:
+  name: Weather Assistant
+  description: Weather forecast agent for Selu with live Open-Meteo data.
+  long_description: This agent provides current conditions and a 7-day weather forecast for locations worldwide.
+
+capabilities:
+  weather-api:
+    tools:
+      get_forecast:
+        display_name: Get weather
+        description: Fetch current weather and a 7-day forecast for a location.
+
+approval:
+  tools:
+    weather-api__get_forecast:
+      label: Get weather
+      message: I want to fetch the latest weather forecast for you.

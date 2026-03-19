@@ -1,0 +1,17 @@
+agent:
+  name: Wetter-Assistent
+  description: Wettervorhersage-Agent fuer Selu mit Live-Daten von Open-Meteo.
+  long_description: Dieser Agent liefert aktuelle Bedingungen und eine 7-Tage-Vorhersage fuer Orte auf der ganzen Welt.
+
+capabilities:
+  weather-api:
+    tools:
+      get_forecast:
+        display_name: Wetter abrufen
+        description: Rufe das aktuelle Wetter und eine 7-Tage-Vorhersage fuer einen Ort ab.
+
+approval:
+  tools:
+    weather-api__get_forecast:
+      label: Wetter abrufen
+      message: Ich moechte die aktuelle Wettervorhersage fuer dich abrufen.
